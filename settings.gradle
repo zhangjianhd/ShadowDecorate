@@ -1,0 +1,3 @@
+include ':shadow'
+include ':app'
+rootProject.name = "Shadow"

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shadow</string>
+    <string name="app_001">蓝色投影有状态</string>
+    <string name="app_002">橙色投影有状态</string>
+    <string name="app_003">红色投影有状态</string>
+    <string name="app_004">弥散卡片</string>
+    <string name="app_005">投影自定义圆角无状态</string>
+    <string name="app_006">重置按钮状态</string>
+    <string name="app_007">点按press样式,点击设置为disable</string>
+</resources>
