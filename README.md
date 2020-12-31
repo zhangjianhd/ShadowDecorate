@@ -1,6 +1,6 @@
 ## ShadowDecorate **布局无侵入、不占用View空间**的弥散阴影处理
 
-实现效果：
+[demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_shadow.jpg?raw=true)
 
 ## 解决的问题
 
@@ -21,7 +21,6 @@
 ```kotlin
   view.background = BlueDropShadowDrawable
 ```
-
 ```kotlin
   view.background = DropShadowGradientDrawable(
             Color.parseColor("#FF646B"),
@@ -29,8 +28,10 @@
             dp2px(this,5)
         )
 ```
+[小圆角效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_rect_drop.png?raw=true)
 
 ***（DiffusionShadowDrawable同理，不再赘述）***
+[DiffusionShadowDrawable同理](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_diffusion.png?raw=true)
 
 可以重写contentDrawable()方法以自由绘制内容区域背景（如渐变或者带边框等等）：可以参考DropShadowGradientDrawable的实现，DropShadowGradientDrawable实现了内容区域y方向线性渐变
 
@@ -48,14 +49,29 @@
 同时提供了有状态的装饰器，将不同的材料组合起来，以提供按钮的点击、不可用等状态组合
 默认实现了demo的三种样式效果（BlueStatefulDrawableFactory、OrangeStatefulDrawableFactory、RedStatefulDrawableFactory）
 
+| 样式                                                   |
+| ------------------------------------------------------ |
+| BlueStatefulDrawableFactory     |
+| OrangeStatefulDrawableFactory                                 |
+| RedStatefulDrawableFactory |
+
 ```kotlin
         StatefulDrawableDecorate.createStatefulDrawable(BlueStatefulDrawableFactory::class.java)
             .init(view)
+```
+[BlueStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_blue_drop.png?raw=true)
+
+```kotlin
         StatefulDrawableDecorate.createStatefulDrawable(OrangeStatefulDrawableFactory::class.java)
             .init(view)
+```
+[OrangeStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_orange_drop.png?raw=true)
+
+```kotlin
         StatefulDrawableDecorate.createStatefulDrawable(RedStatefulDrawableFactory::class.java)
             .init(view)
 ```
+[RedStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_drop.png?raw=true)
 
 可自由实现接口**IStatefulDrawableFactory**创建自己的状态组合
 
