@@ -1,6 +1,24 @@
 ## ShadowDecorate **布局无侵入、不占用View空间**的弥散阴影处理
 
+[![](https://jitpack.io/v/zhangjianhd/ShadowDecorate.svg)](https://jitpack.io/#zhangjianhd/ShadowDecorate)
+
+```groovy
+allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```groovy
+dependencies {
+	        implementation 'com.github.zhangjianhd:ShadowDecorate:1.0.0'
+	}
+```
+
 ![demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/shadowanim.gif?raw=true)
+
+***[demo下载](https://github.com/zhangjianhd/ShadowDecorate/raw/master/demo/Shadow.apk)***
 
 ## 解决的问题
 
