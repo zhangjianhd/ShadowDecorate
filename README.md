@@ -1,6 +1,6 @@
 ## ShadowDecorate **布局无侵入、不占用View空间**的弥散阴影处理
 
-!![demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_shadow.jpg?raw=true)
+![demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/shadowanim.gif?raw=true)
 
 ## 解决的问题
 
@@ -56,19 +56,19 @@
 | RedStatefulDrawableFactory |
 
 ```kotlin
-        StatefulDrawableDecorate.createStatefulDrawable(BlueStatefulDrawableFactory::class.java)
+   StatefulDrawableDecorate.createStatefulDrawable(BlueStatefulDrawableFactory::class.java)
             .init(view)
 ```
 ![BlueStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_blue_drop.png?raw=true)
 
 ```kotlin
-        StatefulDrawableDecorate.createStatefulDrawable(OrangeStatefulDrawableFactory::class.java)
+   StatefulDrawableDecorate.createStatefulDrawable(OrangeStatefulDrawableFactory::class.java)
             .init(view)
 ```
 ![OrangeStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_orange_drop.png?raw=true)
 
 ```kotlin
-        StatefulDrawableDecorate.createStatefulDrawable(RedStatefulDrawableFactory::class.java)
+   StatefulDrawableDecorate.createStatefulDrawable(RedStatefulDrawableFactory::class.java)
             .init(view)
 ```
 ![RedStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_drop.png?raw=true)
