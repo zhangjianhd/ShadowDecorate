@@ -1,6 +1,6 @@
 ## ShadowDecorate **布局无侵入、不占用View空间**的弥散阴影处理
 
-[demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_shadow.jpg?raw=true)
+!![demo效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_shadow.jpg?raw=true)
 
 ## 解决的问题
 
@@ -28,10 +28,10 @@
             dp2px(this,5)
         )
 ```
-[小圆角效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_rect_drop.png?raw=true)
+![小圆角效果](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_rect_drop.png?raw=true)
 
 ***（DiffusionShadowDrawable同理，不再赘述）***
-[DiffusionShadowDrawable同理](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_diffusion.png?raw=true)
+![DiffusionShadowDrawable同理](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_diffusion.png?raw=true)
 
 可以重写contentDrawable()方法以自由绘制内容区域背景（如渐变或者带边框等等）：可以参考DropShadowGradientDrawable的实现，DropShadowGradientDrawable实现了内容区域y方向线性渐变
 
@@ -59,19 +59,19 @@
         StatefulDrawableDecorate.createStatefulDrawable(BlueStatefulDrawableFactory::class.java)
             .init(view)
 ```
-[BlueStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_blue_drop.png?raw=true)
+![BlueStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_blue_drop.png?raw=true)
 
 ```kotlin
         StatefulDrawableDecorate.createStatefulDrawable(OrangeStatefulDrawableFactory::class.java)
             .init(view)
 ```
-[OrangeStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_orange_drop.png?raw=true)
+![OrangeStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_orange_drop.png?raw=true)
 
 ```kotlin
         StatefulDrawableDecorate.createStatefulDrawable(RedStatefulDrawableFactory::class.java)
             .init(view)
 ```
-[RedStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_drop.png?raw=true)
+![RedStatefulDrawableFactory](https://github.com/zhangjianhd/ShadowDecorate/blob/master/screenshot/screenshot_red_drop.png?raw=true)
 
 可自由实现接口**IStatefulDrawableFactory**创建自己的状态组合
 
