@@ -107,6 +107,7 @@ public class DropShadowDrawable extends LayerDrawable {
 
         //画背景
         contentDrawable().draw(canvas);
+        invalidateSelf();
     }
 
     private void drawRadius(Canvas canvas) {
