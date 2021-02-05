@@ -30,7 +30,7 @@ allprojects {
 
 ```groovy
 dependencies {
-	        implementation 'com.github.zhangjianhd:ShadowDecorate:1.0.1'
+	        implementation 'com.github.zhangjianhd:ShadowDecorate:1.0.2'
 	}
 ```
 
