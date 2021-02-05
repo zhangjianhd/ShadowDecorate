@@ -107,8 +107,14 @@ public class DropShadowDrawable extends LayerDrawable {
 
         //画背景
         contentDrawable().draw(canvas);
-        invalidateSelf();
+
+        if (!hasInvalidate) {
+            invalidateSelf();
+            hasInvalidate = true;
+        }
     }
+
+    private boolean hasInvalidate = false;
 
     private void drawRadius(Canvas canvas) {
         //左上角 阴影圆弧
